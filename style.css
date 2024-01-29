@@ -1,6 +1,7 @@
+
 @font-face {
-    font-family: Whisper;
-    src: url('Whisper.ttf');
+    font-family: 'Whisper';
+    src: url(Whisper.ttf) format('ttf');
 }
     
 @font-face {
@@ -19,5 +20,5 @@
 }
 
 h1 {
-    font-family: Whisper
+    font-family: 'Whisper';
 }
