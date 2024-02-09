@@ -22,7 +22,6 @@
       <div class="header-text">
         <p>Developer</p>
         <h1>Hello, <br>I'm Ocean</h1>
-
       </div>
     </div>
   </div>
@@ -31,29 +30,67 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-
+          <img src="./path/to/your/under_the_sea.jpg" alt="Ocean">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p>Greetings! My name is Ocean, and I am excited to share with you my journey and experiences in the world of coding. Throughout the 2022-23 school year, I undertook two semester courses that sparked my passion for programming and equipped me with valuable skills.</p>
-        </div>
-        <div class="tab-titles">
-          <p class="tab-links active-link">Skills</p>
-          <p class="tab-links">Experience</p>
-          <p class="tab-links">Education</p>
-        </div>
-        <div class="tab-contents">
-          <ul>
-            <li><span>Xcode</span>Swift UI</li>
-          </ul>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Xcode</span><br>Swift UI</li>
+              <li><span>Web Development</span><br>html & css</li>
+              <li><span>Game Development</span><br>Swift & Spritekit</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Swift/SwiftUI</span><br>4 months</li>
+              <li><span>Swift/Spritekit</span><br>4 months</li>
+              <li><span>html/CSS</span><br>2 months</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Courses</span><br>Taken at school</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <footer>
-      <p>&copy; 2024 Ocean</p>
-    </footer>
-  </body>
-  </html>
+  </div>
+  <!---------services---------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="service-list">
+        
+      </div>
+    </div>
+
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <footer>
+    <p>&copy; 2024 Ocean</p>
+  </footer>
+</body>
 </html>
 
 
