@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/b6e8a213ba.js" crossorigin="anonymous"></script>
   <title>Developer Profile</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="./path/to/your/under_the_sea.jpg" alt="Ocean">
+          <img src="./path/to/your/whale.jpg" alt="Ocean">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
@@ -63,16 +64,65 @@
       </div>
     </div>
   </div>
+  <!---------portfolio---------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Portfolio</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./path/to/your/Project_1.png" alt="Card">
+          <div class="layer">
+            <h3>Card Game</h3>
+            <p>Press the deal button and get a card. The person with the highest card wins a point.</p>
+          </div>
+        </div>
+    <div class="work">
+      <img src="./path/to/your/Project_2.png" alt="Invader">
+      <div class="layer">
+        <h3>Space Invader</h3>
+        <p>Tap the screen to shoot bullets. The bullets will destroy the blocks.</p>
+      </div>
+  </div>
+  <div class="work">
+    <img src="./path/to/your/Project_3.png" alt="Color">
+    <div class="layer">
+      <h3>Color Switch</h3>
+      <p>Tap the screen to jump. The color of the ball will determine which color you can pass through.</p>
+    </div>
+  </div>
+      </div>
+      <a href="#" class="button">View More</a>
+
+  </div>
   <!---------services---------->
   <div id="services">
     <div class="container">
       <h1 class="sub-title">My Services</h1>
       <div class="service-list">
-        
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>html, css, javascript</p>
+          <a href="#">Read More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-gamepad"></i>
+          <h2>Game Development</h2>
+          <p>Swift, Spritekit</p>
+          <a href="#">Read More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Development</h2>
+          <p>Swift, SwiftUI</p>
+          <a href="#">Read More</a>
+        </div>
+
       </div>
     </div>
 
   </div>
+ 
   <script>
     var tablinks = document.getElementsByClassName('tab-links');
     var tabcontents = document.getElementsByClassName('tab-contents');

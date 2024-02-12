@@ -35,7 +35,7 @@
     #header {
         width: 100%;
         height: 100vh;
-        background-image: url();
+        background-image: url(/html/path/to/your/under_the_sea.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -166,10 +166,135 @@
 .tab-contents.active-tab{
     display: block;
 }
+/*Portfolio*/
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #000);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Shizuru', sans-serif;
+}
+.work:hover img{
+    transform: scale(1.2)
+}
+.work:hover .layer{
+    height: 100%;
+}
+.button{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid yellowgreen;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.button:hover{
+    background: yellowgreen;
+}
 /*Services*/
 #services{
     padding: 30px 0;
 }
-.services-list{
-    display-grid
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.service-list div{
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    transition: background 0.5s, tranform 0.5s;
+}
+
+.service-list div i{
+    font-size: 50px;
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+
+.service-list div h2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.service-list div a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.service-list div a:hover{
+    background: yellowgreen;
+    transform: translateY(-10px);
+}
+.service-list div i{
+    font-size: 50px;
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+.service-list div h2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.service-list div a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+.service-list div:hover{
+    background: blue;
+    transform: translateY(-10px);
 }
