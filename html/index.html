@@ -11,17 +11,19 @@
 </head>
 <body>
   <div id="header">
-    <div class="container">
+    <div class="header">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </div>
+    <div class="container">
       <div class="header-text">
-        <p>Developer</p>
         <h1>Hello, <br>I'm Ocean</h1>
       </div>
     </div>
@@ -64,10 +66,10 @@
       </div>
     </div>
   </div>
-  <!---------portfolio---------->
-  <div id="portfolio">
+  <!---------projects---------->
+  <div id="projects">
     <div class="container">
-      <h1 class="sub-title">My Portfolio</h1>
+      <h1 class="sub-title">My Projects</h1>
       <div class="work-list">
         <div class="work">
           <img src="./path/to/your/Project_1.png" alt="Card">
@@ -151,6 +153,7 @@
       <p>&copy; 2024 Ocean</p>
     </div>
   </div>
+  
 
   <script>
     var tablinks = document.getElementsByClassName('tab-links');
@@ -166,6 +169,7 @@
       document.getElementById(tabname).classList.add("active-tab");
     }
   </script>
+ 
 </body>
 </html>
 
